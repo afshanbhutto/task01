@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="SignUp-container">
+          <article class="SignUp-info">
+            <div class="company-name">
+                <span>FLEESO</span>
+            </div>
+            <div class="company-desc">
+                <h2>Start your journey with us.</h2>
+                <h5 id="info">
+                  Discover the  world's best community of freelancers and business owner.
+                </h5>
+            </div>
+            <div class="card SignUp-info">
+                <div >
+                    <p>Simply unbeliveable! I am really satisfied with my projects and  business.
+                        This is Absolutely wonderful!
+                    </p>
+                </div>
+                <div class="person">
+                    <div class="img-container">
+                        <img src="./person-1.jpeg" id="person-img" alt="">
+                    </div>
+                    <div class="person-info">
+                        <h4 id="author">Timson K</h4>
+                        <p id="job">Freelancer</p>
+                    </div>
+                </div>
+            </div>
+            
+          </article>
+          <article>
+            <form action="results.html" method="GET" class="form SignUp-form">
+              <h4>Sign up</h4>
+              <p>Have an account? <span><a href="signIn.html"> Sign In</a></span></p>
+              <div class="form-row">
+                <label html="positon" class="form-label">Looking for?</label>
+                <div class="position">
+                  <div class="radio-input">
+                    <input type="radio" value="projects" name="positon" id="projects" >Projects
+                  </div>
+                  <div class="radio-input">
+                    <input type="radio" value="designs" name="positon" id="designs" >Designs
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <label html="email" class="form-label" required>your email</label>
+                <input type="text" name="email" id="email" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="password" class="form-label" required>password</label>
+                <input type="password" name="password" id="password" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="search" class="form-label">Search skill</label>
+                <input type="search" list="technologies" name="search" id="search" class="form-input" />
+                <datalist id="technologies">
+                  <option value="HTML">
+                  <option value="CSS">
+                  <option value="JavaScript">
+                  <option value="React">
+                  <option value="Redux">
+                  <option value="Java">
+                  <option value="C++">
+                  <option value="Python">
+              </datalist>
+              </div>
+              <button type="submit" class="btn btn-block">
+                Create account
+              </button>
+            </form>
+          </article>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
